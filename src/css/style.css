@@ -5,26 +5,53 @@ body {
     flex-direction: column;
 }
 
+/*VARIABLES*/
+:root {
+    /* pele */
+    --palida: rgb(255, 234, 194);
+    --clara: rgb(252, 201, 143);
+    --morena: rgb(226, 173, 113);
+    --parda: rgb(172, 122, 65);
+    --escura: rgb(87, 49, 13);
+
+    /* olho */
+    --marrom: rgb(43, 22, 2);
+    --azul: rgb(139, 168, 198);
+    --verde: rgb(147, 231, 111);
+    --preta: rgb(0, 0, 0);
+}
+
+/* CABELO*/
 #cabelo {
-    background-color: aqua;
-    height: 75px;
+    height: 87px;
     width: 150px;
 	position: fixed;
 	top: 25px;
 	left: 625px;
     z-index: -1;
 }
-
-#cabelo .preto {
+#cabelo.preto {
     background-color: black;
 }
-
-#cabelo .marrom {
+#cabelo.marrom {
     background-color: rgb(112, 45, 0);
 }
+#cabelo.loiro {
+    background-color: rgb(231, 203, 46);
+}
+#cabelo.branco {
+    background-color: rgb(228, 228, 222);
+}
+#cabelo.vermelho {
+    background-color: rgb(231, 35, 1);
+}
+#cabelo.azul {
+    background-color: rgb(1, 101, 231);
+}
+
+/*COR DE PELE*/
 
 #cabeca {
-    background-color: black;
     height: 100px;
     width: 100px;
     position: fixed;
@@ -33,18 +60,23 @@ body {
     z-index: 0;
 }
 
-#corpo {
-    background-color: rgb(255, 0, 0);
-    height: 100px;
-    width: 50px;
-    position: fixed;
-	top: 150px;
-	left: 675px;
-    z-index: 0;
+.frame .palida {
+    background-color: var(--palida);
+}
+.frame .clara {
+    background-color: var(--clara);
+}
+.frame .morena {
+    background-color: var(--morena);
+}
+.frame .parda {
+    background-color: var(--parda);
+}
+.frame .escura {
+    background-color: var(--escura);
 }
 
 #bracos {
-    background-color: rgb(251, 255, 0);
     height: 30px;
     width: 140px;
     position: fixed;
@@ -53,8 +85,9 @@ body {
     z-index: -1;
 }
 
+/* COR DOS OLHOS */
+
 #olho1 {
-    background-color: rgb(30, 255, 0);
     height: 10px;
     width: 10px;
     position: fixed;
@@ -64,7 +97,6 @@ body {
 }
 
 #olho2 {
-    background-color: rgb(30, 255, 0);
     height: 10px;
     width: 10px;
     position: fixed;
@@ -73,12 +105,70 @@ body {
     z-index: 1;
 }
 
+.frame .marrom {
+    background-color: var(--marrom);
+}
+.frame .azul {
+    background-color: var(--azul);
+}
+.frame .verde {
+    background-color: var(--verde);
+}
+.frame .preta {
+    background-color: var(--preta);
+}
+
+/* COR DA ROUPA */
+
+#corpo {
+    height: 100px;
+    width: 50px;
+    position: fixed;
+	top: 150px;
+	left: 675px;
+    z-index: 0;
+}
+
+#corpo.preto {
+    background-color: black;
+}
+#corpo.vermelho {
+    background-color: rgb(199, 6, 6);
+}
+#corpo.amarelo {
+    background-color: rgb(242, 224, 63);
+}
+#corpo.laranja {
+    background-color: rgb(224, 106, 27);
+}
+#corpo.verde {
+    background-color: rgb(9, 118, 8);
+}
+#corpo.azul {
+    background-color: rgb(17, 45, 128);
+}
+#corpo.roxo {
+    background-color: rgb(78, 8, 107);
+}
+#corpo.branco {
+    background-color: rgb(199, 199, 198);
+}
+#corpo.cinza {
+    background-color: rgb(103, 102, 102);
+}
+
 #boca {
-    background-color: rgb(129, 0, 0);
+    background-color: rgb(147, 41, 41);
     height: 10px;
-    width: 60px;
+    width: 49px;
     position: fixed;
 	top: 105px;
 	left: 670px;
     z-index: 1;
+}
+
+#label {
+    position: fixed;
+    top: 50px;
+    left: 250px;
 }
