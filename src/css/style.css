@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cabelo {
+    background-color: aqua;
+    height: 75px;
+    width: 150px;
+	position: fixed;
+	top: 25px;
+	left: 625px;
+    z-index: -1;
+}
+
+#cabelo .preto {
+    background-color: black;
+}
+
+#cabelo .marrom {
+    background-color: rgb(112, 45, 0);
+}
+
+#cabeca {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+	top: 50px;
+	left: 650px;
+    z-index: 0;
+}
+
+#corpo {
+    background-color: rgb(255, 0, 0);
+    height: 100px;
+    width: 50px;
+    position: fixed;
+	top: 150px;
+	left: 675px;
+    z-index: 0;
+}
+
+#bracos {
+    background-color: rgb(251, 255, 0);
+    height: 30px;
+    width: 140px;
+    position: fixed;
+	top: 166px;
+	left: 636px;
+    z-index: -1;
+}
+
+#olho1 {
+    background-color: rgb(30, 255, 0);
+    height: 10px;
+    width: 10px;
+    position: fixed;
+	top: 74px;
+	left: 670px;
+    z-index: 1;
+}
+
+#olho2 {
+    background-color: rgb(30, 255, 0);
+    height: 10px;
+    width: 10px;
+    position: fixed;
+	top: 79px;
+	left: 713px;
+    z-index: 1;
+}
+
+#boca {
+    background-color: rgb(129, 0, 0);
+    height: 10px;
+    width: 60px;
+    position: fixed;
+	top: 105px;
+	left: 670px;
+    z-index: 1;
+}
